@@ -1,0 +1,26 @@
+{
+  "appId": "com.multibiz.app",
+  "appName": "Multibiz",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "server": {
+    "url": "http://localhost:8080",
+    "cleartext": true
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    },
+    "Browser": {
+      "toolbarColor": "#0F172A",
+      "navigationBarColor": "#0F172A"
+    },
+    "LocalNotifications": {
+      "soundEnabled": true
+    }
+  },
+  "hooks": {
+    "postBuild": "node scripts/copy-web.js"
+  }
+}

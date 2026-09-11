@@ -1,0 +1,44 @@
+{
+  "name": "multibiz-panel",
+  "version": "1.0.0",
+  "description": "Panel multi-negocio para ventas, inventario y clientes",
+  "scripts": {
+    "start": "npx serve",
+    "build": "echo 'Sin build necesario - archivos estáticos'",
+    "deploy": "gh-pages -d .",
+    "test:unit": "vitest",
+    "test:unit:watch": "vitest --watch",
+    "test:unit:ui": "vitest --ui",
+    "test:unit:run": "vitest run",
+    "icons": "node scripts/gen-icons.js",
+    "cap:init": "npx cap init",
+    "cap:sync": "npx cap sync",
+    "cap:open:android": "npx cap open android",
+    "cap:open:ios": "npx cap open ios",
+    "cap:serve": "npx cap serve"
+  },
+  "keywords": [
+    "spa",
+    "multibusiness",
+    "pwa",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/app": "^5.0.6",
+    "@capacitor/haptics": "^5.0.6",
+    "@capacitor/keyboard": "^5.0.6",
+    "@capacitor/status-bar": "^5.0.6",
+    "@capacitor/core": "^5.6.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.6.4",
+    "@capacitor/android": "^5.6.4",
+    "@vitest/ui": "^1.6.1",
+    "happy-dom": "^20.14.3",
+    "jsdom": "^22.1.0",
+    "sharp": "^0.35.4",
+    "vite": "^5.0.0",
+    "vitest": "^1.6.1"
+  }
+}
